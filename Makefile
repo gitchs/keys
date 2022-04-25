@@ -1,3 +1,3 @@
 all:
-	cat keys/* > allinone.txt
+	cat `find keys -type f -name '*.pub'|sort` > allinone.txt
 
